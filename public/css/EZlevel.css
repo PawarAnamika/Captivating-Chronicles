@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../Images/showlevelbg.jpg') center/cover no-repeat;
+    height: 78vh;
+    font-family: 'Emblema One', cursive;
+    color: rgb(12, 12, 12);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    gap: 20px;
+    margin-top: 90px;
+}
+
+.cat-link {
+    text-align: center;
+    text-decoration: none;
+}
+
+.cat-item {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.cat-item:hover {
+    transform: scale(1.1) translate(0px, -60px);
+    z-index: 4;
+}
+
+.cat-item:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.cat-text {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(13, 13, 13);
+    margin-top: 20px;
+}

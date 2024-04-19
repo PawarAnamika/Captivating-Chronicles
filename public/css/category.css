@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../Images/catbg.png') center/cover no-repeat;
+    height: 78vh;
+    font-family: 'Emblema One', cursive;
+    color: antiquewhite;
+}
+
+.header {
+    text-align: right;
+    padding: 10px;
+}
+
+.logout-button,
+.rules-button {
+    background-color: #4CAF50;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.cat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 90px;
+    max-height: 40vh; /* Limit the maximum height */
+    overflow-y: auto;
+    max-height: 400px; /* Set maximum height */
+          
+}
+
+.cat-link {
+    text-align: center;
+    text-decoration: none;
+    width: calc(33.33% - 20px);
+}
+
+.cat-item {
+    width: 300px;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+.cat-item:hover {
+    transform: scale(1.1) translate(0px, -60px);
+    z-index: 4;
+}
+
+.cat-item:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.cat-text {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+}
+

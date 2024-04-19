@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: url('../Images/bghomepage.png') center/cover no-repeat;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #0b0a0a2d;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.navbar li:hover {
+  transform: scale(1.1);
+}
+
+.para {
+  background-color: rgba(255, 255, 255, 0.482);
+  width: 600px;
+  margin: 20px auto 0 auto; /* Center the div vertically and horizontally */
+  height: 300px;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.info {
+  font-size: 18px;
+  font-weight: 900;
+}
+h1{
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(3, 3, 3);
+  margin: 100px;
+  margin-left: 700px;
+  
+}

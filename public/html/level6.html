@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/level6.css">
+  <title>Level 5</title>
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <div class="clock-container">
+        <img src="../Images/watch.png" class="clock-image" alt="clock-image"></img>
+        <div id="timer"><span id="time">00:00</span></div>
+      </div>
+
+     <div class="nested-sidebar">
+      <div id="scoreDisplay">Score: 0</div> <!-- Score display div -->
+      <p id="objectCount">Items needed: <span>20</span></p>
+      <ul id="list">
+        <li id="pillow">Pillow</li>
+        <li id="parrot">Parrot</li>
+        <li id="DwarfItem">Dwarf</li>
+        <li id="keyItem">Key</li>
+        <li id="lock">Lock</li>
+        <li id="Bonsai">Bonsai</li>
+        <li id="DoorKnocker">Door Knocker</li>
+        <li id="boots">Boots</li>
+        <li id="lantern">Lantern</li>
+        <li id="tulips">Tulips</li>
+        <li id="butterfly">Butterfly</li>
+        <li id="keyhole">Key Hole</li>
+        <li id="web">Web</li>
+        <li id="starfish">Starfish</li>
+        <li id="tomato">Tomato slice</li>
+        <li id="hourglass">Hour glass</li>
+        <li id="barbers pole">Barbers pole</li>
+        <li id="Compass">Compass</li>
+        <li id="rose">Rose</li>
+        <li id="books">Books</li>
+        <li id="globe">Globe</li>
+
+        
+      </ul>
+    </div>
+    <button class="button" id="Clue" >CLUE</button>
+    <a href="categories.html"><button class="button" id="ExitGame">EXIT</button></a>
+    </div>
+
+    <div id="background">
+      <img src="../Images/pillow.png" class="small-image" style="left: 220px; top: 430px ; height:70px"  id="Pillow" onclick="removeListItem('pillow')">
+      <img src="../Images/parrot.png" class="small-image" style="left: 857px; top: 50px; height:50px;" id="parrot" onclick="removeListItem('parrot')">
+      <img src="../Images/green Dwarf.png" class="small-image" style="left: 1100px; top: 600px; height:200px" id="DwarfIcon" onclick="removeListItem('DwarfItem')" >
+      <img src="../Images/key.png" class="small-image" style="left: 1190px; top: 200px; height:50px" id="keyIcon" onclick="removeListItem('keyItem')">
+      <img src="../Images/lock.png" class="small-image" style="left: 920px; top: 660px; height:30px" id="lock" onclick="removeListItem('lock')">
+      <img src="../Images/Bonsai.png" class="small-image" style="left: 900px; top: 325px; height:70px" id="Bonsai" onclick="removeListItem('Bonsai')">
+      <img src="../Images/door knocker.png" class="small-image" style="left: 720px; top: 460px; height:50px" id="DoorIcon" onclick="removeListItem('DoorKnocker')">
+      <img src="../Images/Boots.png" class="small-image" style="left: 1070px; top: 570px; height:50px" id="Boots" onclick="removeListItem('boots')">
+      <img src="../Images/lantern.png" class="small-image" style="left: 1150px; top: 400px; height:50px" id="lantern" onclick="removeListItem('lantern')">
+      <img src="../Images/green tulip.png" class="small-image" style="left: 200px; top: 565px; height:80px" id="Tulips" onclick="removeListItem('tulips')">
+      <img src="../Images/greenbutterfly.png" class="small-image" style="left: 799px; top: 330px; height:40px" id="Butterfly" onclick="removeListItem('butterfly')">
+      <img src="../Images/keyhole.png" class="small-image" style="left: 60px; top: 455px; height:80px" id="Key Hole" onclick="removeListItem('keyhole')">
+      <img src="../Images/web.png" class="small-image" style="left: 555px; top: 40px; height:90px" id="Web" onclick="removeListItem('web')">
+      <img src="../Images/starfish.png" class="small-image" style="left: 988px; top: 300px; height:40px" id="Starfish" onclick="removeListItem('starfish')">
+      <img src="../Images/tomato slice.png" class="small-image" style="left: 930px; top: 278px; height:40px" id="Tomato" onclick="removeListItem('tomato')">
+      <img src="../Images/hourglass.png" class="small-image" style="left: 200px; top: 650px; height:70px" id="Hour Glass" onclick="removeListItem('hourglass')">
+      <img src="../Images/barbers pole.png" class="small-image" style="left: 130px; top: 410px; height:50px" id="barbers pole" onclick="removeListItem('barbers pole')">
+      <img src="../Images/compass.png" class="small-image" style="left: 250px; top: 150px; height:50px" id="Compass" onclick="removeListItem('Compass')">
+      <img src="../Images/brownrose.png" class="small-image" style="left: 400px; top: 406px; height:75px" id="Rose" onclick="removeListItem('rose')">  
+      <img src="../Images/books.png" class="small-image" style="left: 590px; top: 546px; height:50px" id="Books" onclick="removeListItem('books')"> 
+      <img src="../Images/globe.png" class="small-image" style="left: 425px; top: 486px; height:50px" id="Globe" onclick="removeListItem('globe')">  
+    </div>
+
+<audio id="clickSound" src="../audio/mixkit-game-click-1114.wav" preload="auto"></audio>
+    <audio id="winSound" src="../audio/mixkit-ethereal-fairy-win-sound-2019.wav" preload="auto"></audio>
+
+  </div>
+  <script src="../js/level6.js"></script>
+</body>
+</html>

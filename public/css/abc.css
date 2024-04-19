@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: url('../Images/bghomepage.png') center/cover no-repeat; /* Replace 'background-image.jpg' with your actual background image path */
+  height: 100vh;
+  /* font-family: 'Emblema One', cursive; */
+  font-family: 'Poppins', sans-serif;;
+
+}
+
+#game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+h1 {
+  font-size: 4em;
+  color: rgba(245, 245, 245, 0.826);
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: #35ae39be;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar {
+    background-color: #0b0a0a2d;
+    overflow: hidden;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  .navbar li:hover {
+    transform: scale(1.1);
+  }
+
+  .home::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+}
+
+.home.show::before{
+    opacity: 1;
+    pointer-events: auto;
+}
+.form_container {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    background: #ffffffc7;
+    padding: 25px ;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+}
+
+
+.home.show .form_container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.signup_form{
+    display: none;
+}
+
+.form_container.active .signup_form{
+    display: block;
+}
+
+.form_container.active .login_form{
+    display: none;
+}
+
+.form_close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #131212;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.form_container h2{
+    font-size: 22px;
+    color: #0c0c0c;
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.input_box input{
+    height: 100%;
+    width: 85%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid #aaaaaa;
+}
+.input_box input:focus{
+    border-color: #0f1010;
+}
+
+.input_box i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input_box i.email,
+.input_box i.password{
+    left: 0;
+    color: #707070;
+}
+.input_box input:focus ~i.password,
+.input_box input:focus ~i.email{
+    color: #060606;
+}
+.input_box i.pw_hide{
+    right: 0;
+    font-size: 18px;
+    color: #707070;
+    
+}
+
+.option_field{
+    margin-top: 14px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.form_container a{
+    color: #0d0e0e;
+    font-size: 12px;
+   
+}
+
+.form_container a:hover{
+   text-decoration: underline;
+}
+
+.checkbox{
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+
+}
+.checkbox input{
+    accent-color: #11151394;
+}
+
+.checkbox label{
+    font-size: 12px;
+    color: #0b0217;
+    user-select: none;
+    cursor: pointer;
+}
+
+.form_container .button{
+    background: #32cb77;
+    border-radius: 10px;
+    width: 100%;
+    top: 50%;
+    max-width: 350px;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+
+}
+
+.login_signup{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-btn{
+    transform: scale(0.98);
+}

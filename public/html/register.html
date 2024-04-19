@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="./contactus.html"><i class="fas fa-cogs"></i> Contact us</a></li>
+      <li><a href="../html/Aboutus.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+      <li><a href="../html/Login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <h1>Sign Up</h1>
+    <form action="">
+        <input type="text" id="username" placeholder="Enter your Username" required>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+        <div class="input_box">
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <i class='bx bx-low-vision pw_hide'></i>
+            
+           
+        </div>
+         <button class="button" >Login</button>
+         <div class="login_signup">
+            Don't have account? <a href="#" id="signup">Sign up</a>
+        </div>
+    </form>
+  </div>
+
+  <script>
+    pwShowHide = document.querySelectorAll(".pw_hide");
+    pwShowHide.forEach(icon => {
+        icon.addEventListener("click", () => {
+            let getPwInput = icon.parentElement.querySelector("input");
+            if (getPwInput.type === "password") {
+                getPwInput.type = "text";
+                icon.classList.replace("bx-low-vision", "bx-show-alt");
+            } else {
+                getPwInput.type = "password";
+                icon.classList.replace("bx-show-alt", "bx-low-vision");
+            }
+        })
+    });
+
+  </script>
+</body>
+</html>

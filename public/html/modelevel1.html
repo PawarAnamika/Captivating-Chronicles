@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="../css/modelevel1.css">
+  <title>Easy Level 1</title>
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <p id="objectCount">Items needed: 10</p>
+      <div id="timer">Time remaining: <span id="time">00:00</span></div>
+      <ul id="list">
+        <li id="fairyItem">Fairy</li>
+        <li id="catItem">Cat</li>
+        <li id="fanItem">Fan</li>
+        <li id="DwarfItem">Dwarf</li>
+        <li id="keyItem">key</li>
+        <li>neha</li>
+        <li>pragya</li>
+        <li>yash</li>
+        <li>nisha</li>
+        <li>saloni</li>
+        </ul>
+      <button class="button" id="Clue">CLUE</button>
+      
+      <!-- <button class="button" id="Album">ALBUM</button> -->
+      <button class="button" id="ExitGame">EXIT</button>
+    </div>
+
+    <div id="background">
+      <!-- Small images placed on the background -->
+      <img src="../Images/fairy.png" class="small-image" style="left: 20px; top: 150px height;"  id="fairyIcon" onclick="removeListItem('fairyItem')">
+      <img src="../Images/fan.png" class="small-image" style="left: 300px; top: 250px;" id="fanIcon" onclick="removeListItem('fanItem')">
+      <img src="../Images/kitten.png" class="small-image" style="left: 500px; top: 350px;" id="catIcon" onclick="removeListItem('catItem')" >
+      <img src="../Images/Dwarf.png" class="small-image" style="left: 800px; top: 390px;" id="DwarfIcon" onclick="removeListItem('DwarfItem')" >
+      <img src="../Images/key.png" class="small-image" style="left: 1000px; top: 250px;" id="keyIcon" onclick="removeListItem('keyItem')">
+      <!--<img src="./images/ben10.jpeg" class="small-image" style="left: 300px; top: 250px;" alt="Small Image 2">
+      <img src="./images/bp.jpeg" class="small-image" style="left: 300px; top: 250px;" alt="Small Image 2">
+      <img src="./images/drStange2.jpeg" class="small-image" style="left: 300px; top: 250px;" alt="Small Image 2">
+      <img src="./images/goblin.jpeg" class="small-image" style="left: 300px; top: 250px;" alt="Small Image 2">
+      <img src="./images/farFromHome.jpeg" class="small-image" style="left: 300px; top: 250px;" alt="Small Image 2"> -->
+      <!-- Add more small images as needed -->
+
+      <!-- You can also add more HTML content if necessary -->
+    </div>
+  </div>
+ <script src="../js/modelevel1.js"></script>
+
+  
+</body>
+</html>
